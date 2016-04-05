@@ -25,3 +25,4 @@
   "public_header_files": "TealiumIOS.framework/Headers/*.h",
   "vendored_frameworks": "TealiumIOS.framework",
   "version": "5.0.2"
+}
