@@ -22,7 +22,22 @@
   "platforms": {
     "ios": "8.1"
   },
-  "public_header_files": "TealiumIOS.framework/Headers/*.h",
-  "vendored_frameworks": "TealiumIOS.framework",
-  "version": "5.0.2"
+  "default_subspecs": [
+      "Core"
+  ],
+  "version": "5.0.2",
+  "subspecs": [
+      {
+          "name": "Core",
+          "vendored_frameworks": "TealiumIOS.framework"
+     },
+     {
+         "name": "Lifecycle",
+         "vendored_frameworks": "Support/Lifecycle/TealiumIOSLifecycle.framework",
+         "dependencies": {
+             "TealiumIOS/Core": [
+            ]
+        }
+     }
+  ]
 }
